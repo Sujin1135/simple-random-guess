@@ -13,12 +13,7 @@ func main() {
 		fmt.Println("예상되는 숫자를 입력하세요")
 		fmt.Scan(&guessNum)
 		result := randGenerator.GuessNum(guessNum)
-		if result == int8(-1) {
-			fmt.Println("입력하신 숫자가 더 작습니다.")
-		} else if result == int8(1) {
-			fmt.Println("입력하신 숫자가 더 큽니다.")
-		} else {
-			fmt.Println("정답입니다.")
+		if result == int8(0) {
 			break
 		}
 	}
